@@ -28,6 +28,7 @@ public class StatusTypeFactory
         Id = statusType.Id,
         StatusName = statusType.StatusName,
     };
+
     public static StatusTypeEntity Create(StatusTypeUpdateForm form) => new()
     {
         Id = form.Id,

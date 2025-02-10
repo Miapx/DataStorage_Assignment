@@ -18,4 +18,7 @@ public class UserEntity
 
     [Column(TypeName = "varchar(150)")]
     public string Email { get; set; } = null!;
+
+    public virtual ICollection<UserEntity> Users { get; set; } = [];
+
 }

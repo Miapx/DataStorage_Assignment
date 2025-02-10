@@ -10,4 +10,6 @@ public class CustomerEntity
 
     [Column(TypeName = "nvarchar(50)")]
     public string CustomerName { get; set; } = null!;
+
+    public virtual ICollection<CustomerEntity> Customers { get; set; } = [];
 }

@@ -4,7 +4,7 @@ namespace Data.Interfaces;
 
 public interface IBaseRepository<TEntity> where TEntity : class
 {
-    Task<bool> AlreadyExistsAsync(Expression<Func<TEntity, bool>> expression);
+    //Task<bool> AlreadyExistsAsync(Expression<Func<TEntity, bool>> expression);
     Task<TEntity> CreateAsync(TEntity entity);
     Task<bool> DeleteAsync(Expression<Func<TEntity, bool>> expression);
     Task<IEnumerable<TEntity>> GetAllAsync();

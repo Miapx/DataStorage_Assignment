@@ -10,4 +10,7 @@ public class StatusTypeEntity
 
     [Column(TypeName = "nvarchar(50)")]
     public string StatusName { get; set; } = null!;
-} 
+
+    public virtual ICollection<StatusTypeEntity> StatusType { get; set; } = [];
+
+}

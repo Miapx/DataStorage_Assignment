@@ -90,8 +90,8 @@ public abstract class BaseRepository<TEntity>(DataContext context) : IBaseReposi
         }
     }
 
-    public virtual async Task<bool> AlreadyExistsAsync(Expression<Func<TEntity, bool>> expression)
-    {
-        return await _dbSet.AnyAsync(expression);
-    }
+    //public virtual async Task<bool> AlreadyExistsAsync(Expression<Func<TEntity, bool>> expression)
+    //{
+    //    return await _dbSet.AnyAsync(expression);
+    //}
 }
